@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@200&family=Open+Sans&family=Oswald&family=Raleway&display=swap');
+
+*{
+  font-family: 'Montserrat';  <!-- * 표시는 문서 전체에 적용하겠다는 뜻 -->
+}
+
+body,h1,h2{                 <!-- 각 인터넷 브라우저마다 기본 적용되는 마진과 패딩이 다르기 때문에 각 테그에 마진과 패딩을 0px로 지정해서 통일시켜줌-->
+  margin: 0px;
+  padding: 0px;
+}
+
+
+h1{                        <!-- 기본적인 테그들은 . 이 붙지 않고 사용하여 전체적으로 적용하는 식으로 CSS편집을 하며, Class로 지정된 테그들은 .표시로 구분해서 편집해야함-->
+  font-size:36px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+h2{
+  font-size: 20px;
+  font-weight: lighter;
+  color: #282828;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 16px;
+  padding-bottom: 5px;
+}
+
+section{
+  margin-bottom: 24px;
+}
+
+.name-text{
+  font-size: 16px;
+  color: #7c7c7c;
+  font-weight: bold; <!-- 폰트의 굵기-->
+}
+
+.about-me-text{
+  font-size: 10px;
+  line-height: 16px; <!-- 줄간 간격-->
+
+}
+
+.title-text{
+  font-size: 11px;
+  font-weight: bold;
+  color: #282828
+  float: left;
+}
+
+.year-text{
+  font-size: 11px;
+  font-weight: bold;
+  color: #282828;
+  float: right;
+}
+
+.desc-text{
+  font-size: 9px;
+}
+
+.desc-subtext{
+  font-size: 9px;
+  color: #282828;
+  padding-left: 16px;
+}
+
+footer{
+  text-align: center;
+  background-color: #1e1e1e;
+  padding: 20px;
+  color: #919191;
+  font-size:12PX;
+}
+
+.title-box{
+  text-align: Right;
+}
+
+.sns-img{
+  width: 12px; <!-- 가로-->
+  height: 12px; <!-- 높이 세로-->
+}
+
+.sns-wrap{
+  text-align: right;
+}
+
+.float-wrap{
+  overflow: hidden;  <!-- 오버플로우 히든을 통해 디비전으로 그룹지어진 플로트 그룹을 둥둥 떠다니지 않고 글자들이 서로 곂치지 않게 하기위해서 설정을 해줌
+                      그러기 위해서 위의 타이틀, 이어 텍스트들에 텍스트 얼라인을 쓰지않고 플로트를 사용함 -->
+}
+
+.mainbox{
+  border: 1px solid #ebebeb; <!-- 두께, 테두리 방식, 색깔 순임-->
+  width: 610px;
+  margin-left: auto; <!-- 디비전으로 묶어진것을 마진 오토들을 통해 가운데정렬 (박스정렬)함 정해진 규격이라 생각하면됨-->
+  margin-right: auto;
+  padding: 30px;
+  margin: 30px; <!-- 마진은 박스나 테두리의 가장 바깥쪽영역이며, 그다음 테두리가 보더, 보더안 여백 공간이 패딩이라 생각하면 됨 즉 보더를 기준으로 바깥쪽 마진, 안쪽이 패딩이라 생각하면  -->
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1); <!-- 박스에 그림자를 넣는 코드. 순서대로 보면 0은 가로축 그림자 뻗어나가는 정도, 양수면 오른쪽 방향으로, 음수면 왼쪽 방향으로 뻗음 꼭 뒤에 px를 붙여줘야함
+                                                 두번째는 Y축으로 뻗어나가는 값, 세번쨰는 흐림정도 (블러값), 네번째는 그림자의 퍼짐도(스프레드값)0-->
+                                                <!-- rgba는 그림자의 색을 표현해줌 순서대로 레드 그린 블루 임. 0~255사이의 값을 보면됨 마지막 소수점은 투명도이며 1이 가장 진하고 0이 투명 소수로 0.1은 10% 표현이됨-->
+}

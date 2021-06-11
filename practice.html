@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head> <!-- CSS를 연계하기 위해서는 헤드태그에 들어가야 함. 바디 태그에는 컨텐츠의 직접적인 표현요소가 들어가며 그 외적인 부수적인 모든 부분은 헤드태그에 들어감 브라우저 상단 정보표시가 타이틀 테그 .-->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="practice.css">   <!--두 파일을 연결시켜 주는 것이 바로 link 태그임 rel에 스타일쉬트, href애 연결할 CSS파일적어주면됨-->
+  <title>김멋사의 이력서</title>
+  </head>
+
+  <body>
+    <div class="mainbox"> <!-- 디비전은 하나의 요소를 묶어서 편집을 하기위해 그룹지어 주는 개념-->
+    <div class="title-box"> <!-- 웹은 기본적으로 왼쪽 정렬로 이뤄지는데 김멋사와 HTML/CSS개발자 글자를 오른쪽 정렬을 시키기 위해서 디비전 클래스로 새롭게 묶어서 편집점을 만들어줌-->
+     <h1>김멋사</h1>
+     <p class="name-text">HTML/CSS 개발 </P>
+    </div>
+
+    <section> <!-- 디비전과 동일한 기능을 하는 테그 HTML요소를 묶어서 꾸며주기 위한 도 Div를 난사허요 난잡함을 방지하 article도 같은 역할을 함 나름 구분을 하기위해 많이 사용함-->
+      <h2>ABOUT ME</h2>
+      <p class="about-me-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+
+  <section>
+     <h2>EXPERIENCE</h2>
+    <div class="float-wrap"> <!-- 디비전으로 플로트 랩으로 클래스를 지정하여 둥둥 떠다니는 텍스트들이 곂치지 않게 하기 위해 그룹핑함-->
+     <p class="title-text">Awesome programming Company</p>
+     <p class="year-text">2020-NOW</p>
+   </div>
+     <p class="desc-text">Front-End Web Developer</p>
+     <p class="desc-subtext">HTML/CSS,JS,React,....</p>
+
+     <div class="float-wrap"> <!-- 디비전으로 플로트 랩으로 클래스를 지정하여 둥둥 떠다니는 텍스트들이 곂치지 않게 하기 위해 그룹핑함-->
+      <p class="title-text">Ministry of Health</p>
+      <p class="year-text">2015-2018</p>
+    </div>
+      <p class="desc-text">UI/UX design</p>
+      <p class="desc-subtext">Web-Design</p>
+
+      <div class="float-wrap"> <!-- 디비전으로 플로트 랩으로 클래스를 지정하여 둥둥 떠다니는 텍스트들이 곂치지 않게 하기 위해 그룹핑함-->
+       <p class="title-text">Freelance Work</p>
+       <p class="year-text">2011-2015</p>
+      </div>
+       <p class="desc-text">Graphic design</p>
+       <p class="desc-subtext">Graphic Design, Editorial Design</p>
+   </section>
+
+  <div class="sns-wrap"> <!-- 정렬등의 편집을 위해 타이틀 박스와 똑같이 디비전으로 묶어줌-->
+  <a href="http://facebook.com"><img class="sns-img" src="facebook.png"></a> <!--IMg src는 그립을 올려주는 테그로써 폴더안에 이미지를 넣고 src안에 해당 이미지 이름을 따옴표 안에 넣어주면 됨 img를 클래스로 지정하여 크기등 편집이가능함-->
+  <a href="http://instagram.com"><img class="sns-img" src="insta.png"></a> <!-- A태그는 링크 태크로 href안에 사이트를 넣은후 A테그를 닫아주면 링크가 걸림-->
+</div>
+    </div>
+
+    <footer>
+      <p>Code Lion COPYRIGHT. All right Reserve</p>
+    </footer>
+  </body>
+</html>
